@@ -1,6 +1,14 @@
 import java.util.Scanner;
-
+/**
+ * Classe principal que gerencia a criação e apresentação de dados de conta bancária
+ */
 public class ContaTerminal {
+    /**
+     * Método inicial responsável por receber os dados de conta e exibir a mensagem de boas-vindas.
+     *
+     * @param args argumentos da linha de comando
+     * @throws Exception caso ocorra algum erro na entrada de dados
+     */
     public static void main(String[] args) throws Exception {
         int numero;
         String agencia, nomeCliente;
@@ -9,7 +17,7 @@ public class ContaTerminal {
         System.out.println("Olá, seja bem vindo ao sistema de conta do banco!!");
         System.out.println("--------------------------------------------------");
         System.out.println("Vamos começar!");
-        
+
         System.out.println("Por favor, qual é o seu nome?");
         nomeCliente = scanner.nextLine();
         System.out.println("Por favor, digite o número da Agência ! (ex.: 090-07)");
